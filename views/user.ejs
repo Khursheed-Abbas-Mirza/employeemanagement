@@ -1,0 +1,54 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        background-color: black;
+        
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+            }
+    .details span{
+        color: aqua;
+        font-size: 18px;
+    }
+    a{
+        width: fit-content;
+        padding: 10px;
+        border: none;
+        background: aqua;
+        border-radius: 3px;
+        color: black;
+        text-decoration: none;
+        position: relative;
+        top: 100px;
+        left: 35%;
+    }
+    h1{
+        color: aqua;
+    }
+</style>
+<body>
+    <div class="details">
+        <h1>Welcome <%= name %> You have Logged in successfully</h1>
+        <span>Email :  <%= user.email %></span>
+    <span>userId:  <%= user.userId %></span>
+    <span>hubId: <%= user.hubId %></span>
+    </div>
+    
+    <a href="/">Go toHome</a>
+</body>
+</html>
