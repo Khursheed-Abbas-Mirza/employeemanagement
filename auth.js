@@ -10,6 +10,7 @@ passport.use("hubspot",new OAuth2({
     clientID:CLIENT_ID,
     clientSecret:CLIENT_SECRET,
     callbackURL:"http://localhost:3000/callback",
+    
     scope:'crm.objects.contacts.read'
 },async(accessToken,refreshToken,Profiler,done)=>{
     try {
