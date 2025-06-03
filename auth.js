@@ -9,7 +9,7 @@ passport.use("hubspot",new OAuth2({
     tokenURL:'https://api.hubapi.com/oauth/v1/token',
     clientID:CLIENT_ID,
     clientSecret:CLIENT_SECRET,
-    callbackURL:"http://localhost:3000/callback",
+    callbackURL:"https://employeemanagement-cfsz--3000--ba3e9481.local-credentialless.webcontainer.io/callback",
     
     scope:'crm.objects.contacts.read'
 },async(accessToken,refreshToken,Profiler,done)=>{
